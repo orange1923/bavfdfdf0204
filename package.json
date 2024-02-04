@@ -8,13 +8,17 @@
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "webpack --mode=production"
   },
   "dependencies": {
     "express": "^4.18.2"
   },
+  "devDependencies": {
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  },
   "engines": {
     "node": ">=14"
   }
-
 }
