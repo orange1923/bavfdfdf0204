@@ -21,7 +21,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build and Publish to GitHub Packages
-        run: npm publish --registry=https://npm.pkg.github.com/orange1923
+      - name: Build project
+        run: npm run build
+
+      - name: Publish to GitHub Packages
+        run: npm publish --access public --registry=https://npm.pkg.github.com/orange1923
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
