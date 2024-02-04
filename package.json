@@ -2,7 +2,7 @@
   "name": "hug-hug2gg",
   "version": "1.0.0",
   "description": "nodejs",
-  "main": "index.js",
+  "main": "index.js",  // 指定入口文件
   "author": "kusa",
   "license": "MIT",
   "private": false,
